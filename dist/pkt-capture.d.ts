@@ -130,8 +130,7 @@ interface PktCaptureAllEvents {
     connect: (ip: string, deviceName: string) => void;
 }
 declare enum PktCaptureMode {
-    MODE_PCAP = 0,
-    MODE_RAW_SOCKET = 1
+    MODE_PCAP = 0
 }
 declare class PktCaptureAll extends TypedEmitter<PktCaptureAllEvents> {
     captures: Map<string, PktCapture>;
